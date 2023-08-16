@@ -8,6 +8,7 @@ function Continent() {
     return (
         <div>
         <h2>{continentName}</h2>
+        <img src={`/images/${continent.image}`} alt={continentName} />
         <ul>
             {continent.countries.map(country => <li key={country.code}>{country.name} </li>)}
         </ul>
